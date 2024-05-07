@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Platypi:ital,wght@0,300..800;1,300..800&family=Preahvihear&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menubar">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="aboutme">About me</a>
+                    <a href="footer">Contact me</a>
+                    <a href="#">Blogs</a>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <a href="#"><i class="fa-brands fa-facebook icons"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin icons"></i></a>
+                <a href="#"><i class="fa-brands fa-github icons"></i></a>
+            </div>
+        </div>
+    </header>
+    <section class="mainlayout">
+        <div class="mainheading">
+            <h1>Do something great</h1>
+            <div class="secondheading">
+                <h5>"Programmers are like wizards - they turn coffee into code."</h5>
+            </div>
+        </div>
+        <div class="mainbutton">
+            <button class="homebutton">Our Services</button>
+        </div>
+    </section>
+    <section class="secondlayout">
+        <div class="aboutmyselfheading">
+            <h4>About Myself</h4>
+            <h2>I’m a Creative director based on New York, who loves clean, simple & unique design. I also enjoy
+                crafting..</h2>
+            <button class="resumebutton">Download Resume</button>
+            <span class="line">"Code--Error--Learn--Repeat"</span>
+        </div>
+
+    </section>
+    <section class="thirdlayout">
+        <class class="experience">
+            <h4>My Experience</h4>
+        </class>
+        <div class="thirdpart">
+            <div class="expertise_pic"></div>
+            <div class="expertise_para">As a fresh web developer, I bring a blend of enthusiasm, technical skill, and a
+                hunger for learning.
+                With a focus on crafting intuitive user experiences and leveraging the latest technologies, I'm
+                committed to delivering impactful solutions that meet client needs and exceed expectations.</div>
+        </div>
+        <div class="thirdpart2">
+            <h1>Experience</h1>
+            <div class="separation"></div>
+            <h2>Front-End Developer</h2>
+            <h4>March 2021-Present</h4>
+            <p>As a budding web developer, I bring a fresh perspective and a passion for innovation to every
+                project I undertake. Armed with a solid foundation in web development technologies and a hunger for
+                learning, I am eager to tackle challenges head-on and contribute creatively to the ever-evolving
+                digital landscape.</p>
+        </div>
+        <div class="container2">
+            <div class="separation2"></div>
+            <h2>Front-End Developer</h2>
+            <h4>March 2021-Present</h4>
+            <p>As a budding web developer, I bring a fresh perspective and a passion for innovation to every
+                project I undertake. Armed with a solid foundation in web development technologies and a hunger for
+                learning, I am eager to tackle challenges head-on and contribute creatively to the ever-evolving
+                digital landscape.</p>
+        </div>
+    </section>
+    <section class="fourthpart">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="vid3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>I help creative entrepreneurs build better businesses, maximize productivity, and cultivate an engaged
+                community.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <h2 class="formheading">Drop a Line</h2>
+        <section class="form">
+            <div class="fillup">
+                <form action="#" method="POST">
+                    <input type="text" id="name" placeholder="Name" name="name" required><br><br>
+                    <input type="email" id="email" placeholder="Email" name="email" required><br><br>
+                    <input type="text" id="subject" placeholder="Subject" name="subject" required><br><br>
+                    <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="formbody">
+                <h3>Contact me</h3>
+                <span>Hyderabad, Telangana</span><br>
+                <span>+91 9550639610</span><br>
+                <span>rizvisameer672@gmail.com</span>
+                <button class="footerbtn">Download Resume</button>
+                <div class="footericons">
+                    <a href="#"><i class="fa-brands fa-facebook icons"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin icons"></i></a>
+                    <a href="#"><i class="fa-brands fa-github icons"></i></a>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div>
+            <p>&copy; 2024 SAFZ Creations. All rights reserved.A template by Colorlib</p>
+    </footer>
+</body>
+
+
+<script>
+    window.addEventListener('resize', () => {
+        const video = document.getElementById('bg-video');
+        video.style.width = window.innerWidth + 'px';
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+    // Find the About me link
+    const aboutMeLink = document.querySelector('a[href="aboutme"]');
+    const footer = document.querySelector('a[href="footer"]');
+
+    // Add click event listener
+    aboutMeLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Scroll to the second layout section
+        document.querySelector('.secondlayout').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    // Add click event listener
+    footer.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default link behavior
+
+        // Scroll to the second layout section
+        document.querySelector('.footer').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+</script>
+
+</html>
