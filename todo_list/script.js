@@ -61,10 +61,3 @@ function AddTodo() {
         input.style.borderColor= "red"
     }
 }
-
-
-
-// var newText = prompt("Edit your todo", todoItem.textContent);
-// if (newText !== null) {
-//     todoItem.textContent = newText;
-// }
